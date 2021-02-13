@@ -1,0 +1,127 @@
+*{
+    font-family: 'Mali',cursive;
+}
+a{
+    text-decoration:none !important;
+    color: rgb(21, 122, 117) !important;
+}
+.divIcon{
+    position: relative;
+    
+}
+.divBlockAB{
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    right: 5vw;
+    width: 5vw;
+    height: 9vh;
+    background-color: chartreuse;
+    text-align: center;
+    padding-top: 1vh;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.containerA{
+    display: flex;
+    flex-direction: row;
+}
+.itemA{
+    width: 100vw;
+    height: 20vh;
+    border-radius: 10px;
+    padding: 1%;
+    text-align: center;
+}
+.itemA:hover{
+    animation: ZoomA 0.5s forwards;
+}
+.TextShake:hover{
+    animation: shake 0.5s infinite;
+}
+
+s ZoomA{
+    from{
+        height:20vh;
+        color: #000;
+    }to{
+        height:24vh;
+        font-size: 120%;
+        color: coral;
+    }
+}
+.containerB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2vh;
+}
+.itemB{
+    width: 30vw;
+    height: 15vh;
+    border-radius: 10px;
+    padding: 1%;
+    text-align: center;
+}
+.itemB:hover{
+    animation: ZoomB 0.5s forwards;
+}
+@keyframes ZoomB{
+    from{
+        height: 15vh;
+        color: #000;
+    }to{
+        height:20vh;
+        font-size: 120%;
+        color: coral;
+    }
+}
+
+#refreshP{
+    animation: rotation 3s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform:rotate(359deg);
+    }to{
+        transform:rotate(0deg) ;
+    }
+}
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
